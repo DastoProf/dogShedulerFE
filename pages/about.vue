@@ -1,5 +1,7 @@
 <script setup>
-const { data: users } = useFetch("https://jsonplaceholder.typicode.com/users");
+const { data: users } = useFetch("https://jsonplaceholder.typicode.com/users", {
+  lazy: true,
+});
 </script>
 
 <template>
